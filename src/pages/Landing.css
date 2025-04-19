@@ -1,0 +1,58 @@
+.landing-page {
+  height: 100vh;
+  background-image: url('https://via.placeholder.com/1920x1080?text=Beautiful+Plants+Background');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.landing-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.landing-content {
+  max-width: 800px;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.landing-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.landing-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.get-started-btn {
+  display: inline-block;
+  background-color: #27ae60;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.get-started-btn:hover {
+  background-color: #219653;
+  transform: translateY(-3px);
+}
